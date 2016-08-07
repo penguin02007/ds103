@@ -1,10 +1,10 @@
 # DS103
-
-## <a name="week1"></a>Week1
-## <a name="week2"></a>Week2
-## <a name="week3"></a>Week3
-
+[Week1](#week1)
 [Week2](#week2)
+[Week3](#week3)
+[Week4](#week4)
+
+## <a name="week2"></a>Week2
 ### Reading from MySQL
 
 ### Reading from HDF5
@@ -69,6 +69,67 @@ url - open connection to url
 gzfile - open connection to gzip file
 ?connections
 
-[Week3](#week3)
+## <a name="week3"></a>Week3
+### Summarizing Data
+```
+summary()
+str()
+```
+#### Quantiles of quantitative cariables
+quantile()
+### Dealing with NAs
+```
+```
+any(is.na(df_gdp$gdp)) # Finding NA
+```
+
+## <a name="week4"></a>Week4
+grep()
+grepl()
+sub()
+gsub()
+```
+paste0("l","chan") # Paste without space
+[1] "lchan"
+```
+```
+str_trim("lchan   ") # Trim off excess and necessary space
+```
+
+### Date
+#### lubridate
+```
+help(package = lubridate)
+date()
+now()
+```
+### format dates
+```
+Sys.getlocale("LC_TIME")	# View locale
+```
+```
+format(Sys.Date(),"%Y%m%d")
+```
+### Setting timezone with lubridate
+```
+> ymd_hms(Sys.time())
+[1] "2016-08-07 16:15:33 UTC"
+
+> ymd("1920-1-2")
+[1] "1920-01-02 UTC"
+```
+### Find out 2d17h34m at EST and convert to HKT
+```
+nyc<-now(tzone="America/New_York")
+depart<-nyc+days(2)
+depart<-update(depart, hours = 17, minutes = 34)
+arrive <- with_tz(arrive, "Asia/Hong_Kong")
+```
+### Find out how long two dates have been elapsed
+```
+last_time <- mdy("June 17, 2008",tz = "Singapore")
+how_long <- interval(last_time, arrive)
+as.period(how_long)
+```
 
 
