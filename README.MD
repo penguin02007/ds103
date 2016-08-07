@@ -1,6 +1,11 @@
 # DS103
 
-## Week 2
+<a name="week-1"></a>
+<a name="week-2"></a>
+
+
+[Week 1](week-1)
+[Week 2](week-2)
 ### Reading from MySQL
 
 ### Reading from HDF5
@@ -44,6 +49,7 @@ library(XML)
 con <- url("http://scholar.google.com/citations?user=HI-I6C0AAAAJ&hl=en")
 html <- htmlTreeParse(url, useInternalNodes=T)
 scholar_name <- xpathSApply (html, "//title", xmlValue)
+cited_by <- xpathSApply(html, "//td[@id='col-cityedby']", xmlValue)
 ```
 #### GET from httr package
 ```
@@ -55,6 +61,14 @@ xpathSApply(parsedHtml,"//title",xmlValue)
 ```
 GET(url),authenticated(user,pass) # Access website with passswords
 ```
+### API method
+#### Method - GET, POST, PUT, DELETE
+
+### data storage mechanism R
+file - open connection to a text file
+url - open connection to url
+gzfile - open connection to gzip file
+?connections
 
 
 
