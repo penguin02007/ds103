@@ -4,7 +4,7 @@
 ## <a name="week2"></a>Week2
 ## <a name="week3"></a>Week3
 
-## Week2
+[Week2](#week2)
 ### Reading from MySQL
 
 ### Reading from HDF5
@@ -69,6 +69,6 @@ url - open connection to url
 gzfile - open connection to gzip file
 ?connections
 
-## Week3
+[Week3](#week3)
 
 
