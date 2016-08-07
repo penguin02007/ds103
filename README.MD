@@ -1,8 +1,8 @@
 # DS103
 
-## <a name="week-1"></a>Week1
-## <a name="week-2"></a>Week2
-## <a name="week-3"></a>Week3
+## <a name="week1"></a>Week1
+## <a name="week2"></a>Week2
+## <a name="week3"></a>Week3
 
 ## Week2
 ### Reading from MySQL
