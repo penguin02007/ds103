@@ -21,3 +21,4 @@ getwd()
 ```
 source("run_analysis.R")
 ```
+#### 4. Examine "tidydata.txt"
